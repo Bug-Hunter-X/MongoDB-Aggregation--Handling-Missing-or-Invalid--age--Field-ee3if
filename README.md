@@ -1,0 +1,2 @@
+# MongoDB Aggregation Error Handling
+This example demonstrates a common error in MongoDB aggregation pipelines: improper handling of missing or invalid data in fields used for calculations.  The initial code is susceptible to failure when the 'age' field is missing or non-numeric. The solution demonstrates more robust error handling using the `$ifNull` operator and type checking within the pipeline.
